@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+
+padding: 0;}
+
+html{font-size: 62,5%;}
+
+/* !important */
+
+
+h3 {text-align: center;}
+
+h1{color: red;}  /*uno particular*/
+
+.TM
+{
+    color: aqua;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.formulario_azul {
+    
+    text-shadow: black;
+    color: blue;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+
+
+} 
+
+
+
+
+#footer {color: crimson;} /*id*/ 
+
+.imagenPrincipal 
+{   
+    padding: 30px;
+    margin-top:10px ;
+    margin-bottom:15px;
+    margin-left: 10px;
+    margin-right: 200px;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+.textoPrincipal
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 50px;
+    /*background-color: rgb(212, 44, 176) ;*/
+    background-image: url(../imagenes/image-concrete-construction-site-30225727.jpg);
+    border: solid 10px;
+    border-top-color: black;
+    border-bottom-color: red;
+    border-left-color: black;
+    border-right-color: red ;
+    grid-area: Texto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: space-around;
+    align-items: center;
+
+    /*width: 400px;
+    height: 300px;
+    overflow: scroll;*/
+
+}
+
+.ubic
+{
+    grid-area: ubic;
+}
+
+/*.ubic
+
+{
+    background-image: url(../imagenes/tm.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: blue;
+
+}
+*/
+
+
+
+/*pruebaaaaaaaa */
+.navegacion
+{   background-color: grey;
+    text-decoration: none;
+    display: flex;
+    margin: 20px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.menu li
+{
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    padding: 0px 10px;
+    text-decoration: none;
+
+}
+
+.menu li a
+{text-decoration: none;}
+
+.submenu
+{display: none;
+position: absolute;
+text-decoration: none;}
+
+.submenu li 
+{
+    display: block;
+    background-color: gold;
+}
+
+.menu li:hover ul
+{display: block;}
+
+
+.caja 
+
+{
+    background-image: url(../imagenes/whatsapp-logo.png);
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    z-index: 1000;
+    background-size: cover;
+    
+
+
+}
+
+.ubic
+{
+
+text-align: center;
+/*margin-left: 380px;*/
+background-color: beige;
+
+}
+
+.maps { 
+    grid-area: maps;
+    margin-left: 340px;}
+
+
+
+
+
+
+.nosotrosPresentacion
+
+{
+    background-color: blue;
+    display: flex;
+    height: 800px;
+    padding: 20px 0;
+    flex-flow: row wrap;
+    align-items: center
+    
+}
+
+.nosotrosPresentacion div  
+
+{
+
+    background-color: blueviolet;
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+    margin: 20px;
+
+
+}
+
+
+.lorem1
+{ 
+    
+    background-image: url(../imagenes/prueba.jpg) ;
+
+    height: 600px;
+
+    background-attachment:fixed;
+
+    background-position:center;
+
+    background-repeat:no repeat;
+
+    background-size:cover;
+
+
+}
+
+
+
+.nosotros1
+{
+    background-color: brown;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+.galeria1
+
+{
+    grid-area: galeria1;
+    display: flex;
+    background-image: url(../imagenes/image-concrete-construction-site-30225727.jpg);
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;  /*altura*/
+    margin: 5px;
+}
+
+
+.galeria1 section
+
+{
+display: flex;
+flex-direction: column;
+align-items:center;
+background-color: orange;
+padding: 5px;
+text-align: center;
+margin: 10px;
+align-content: center;
+
+}
+
+.imagenS
+
+{
+    grid-area: imagens;
+    margin: 10px;
+    padding: 10px;
+    position: fixed;
+    z-index: 1000;
+    width: 100px;
+    height: 100px;
+}
+
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.1fr 2fr 1fr; 
+    grid-template-areas: 
+      "foto menu menu"
+      "foto Texto Texto"
+      "foto Texto Texto"; 
+  }
+
+.foto { grid-area: foto; 
+        display: flex;
+        align-items: flex-start;}
+        
+.menu { grid-area: menu; 
+        display: flex;
+        justify-content: center;
+    }
+  
+
+.flexContacto
+
+{
+    display: flex;
+    flex-direction: row;
+
+} 
+
+
+
+.flexContacto div
+
+{
+margin: 20px;
+padding: 20px;
+background-color: aqua;
+text-align: center;
+
+}
+
+.textLocation
+
+{
+
+    display: flex;
+    flex-direction: row;
+    grid-area: textL;
+}
+
+
+.textLocation div
+
+{
+margin: 20px;
+padding: 20px;
+background-color: aqua;
+text-align: center;
+
+}
+
+
+.footer{
+    background-color:blue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.container-contacto {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "foto formulario"
+  }
+  
+.divformulario { grid-area: formulario; 
+        display: flex;
+        align-items: center;
+        flex-direction: column;}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ubic1 {
+    grid-area: ubic1;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-ubicacion {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "foto ubic1"
+
+  }
+
+@media screen and (max-width: 480px)
+
+{
+
+    .container {
+        display: grid; 
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,0fr);
+        grid-template-areas: 
+          "foto"
+          "menu"
+          "Texto"; 
+      }
+    .foto { grid-area: foto; 
+            display: flex;
+            justify-content: center;}
+    .menu { grid-area: menu; 
+            display: flex;
+            justify-content: center;
+        }
+
+
+    .container-contacto {
+        display: grid; 
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+            "foto"
+            "ubic"
+            "textL"; 
+        }
+
+}
+
+
+.galeriaFotos {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "foto1 foto2 foto3"
+      "foto1 foto4 foto5"
+      "foto6 foto6 foto6";
+  }
+  
+  .foto1 { grid-area: foto1; 
+    display: flex;
+    justify-content: flex-start;}
+  
+  .foto2 { grid-area: foto2; 
+    display: flex;
+    justify-content: flex-start;}
+  
+  .foto3 { grid-area: foto3; 
+    display: flex;
+    justify-content: flex-start;}
+  
+  .foto4 { grid-area: foto4; 
+    display: flex;
+    justify-content: flex-start;}
+  
+  .foto5 { grid-area: foto5; 
+    display: flex;
+    justify-content: flex-start;}
+  
+  .foto6 { grid-area: foto6;
+    display: flex;
+    justify-content: flex-start; }
+  
+@media screen and (max-width: 480px)
+
+{
+
+    .galeriaFotos {
+        display: grid; 
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(6,0fr);
+        grid-template-areas: 
+          "foto1"
+          "foto2"
+          "foto3"
+          "foto4"
+          "foto5"
+          "foto6"; }
+    .foto1 { grid-area: foto1; 
+            display: flex;
+            justify-content: space-evenly;}
+    .foto2 { grid-area: foto2; 
+            display: flex;
+            justify-content: space-evenly;}
+    .foto3 { grid-area: foto3; 
+             display: flex;
+             justify-content: space-evenly;} 
+    .foto4 { grid-area: foto4; 
+             display: flex;
+             justify-content: space-evenly;}
+    .foto5 { grid-area: foto5; 
+             display: flex;
+             justify-content: space-evenly;}             
+    .foto6 { grid-area: foto6; 
+             display: flex;
+             justify-content: space-evenly;} 
+    
+             
+        }
+
+
+.containerNosotros
+
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas: 
+    "imagens"
+    "galeria1";
+} 
