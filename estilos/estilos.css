@@ -45,6 +45,7 @@ h1{color: red;}  /*uno particular*/
     margin-right: 200px;
     width: 200px;
     height: 200px;
+    transform: translate(10px,10px); /*rotate, skew*/
 }
 
 
@@ -231,12 +232,35 @@ background-color: beige;
 {
     grid-area: galeria1;
     display: flex;
-    background-image: url(../imagenes/image-concrete-construction-site-30225727.jpg);
+    /*background-image: url(../imagenes/image-concrete-construction-site-30225727.jpg);*/
     flex-direction: column;
     justify-content: center;
     height: 800px;  /*altura*/
     margin: 5px;
+    animation-name: fondoNosotros;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
 }
+
+
+@keyframes fondoNosotros
+
+{
+    0% {background-color:aqua
+    
+     }
+
+     40% { background-color: blueviolet;}
+
+
+     90% {background-color: brown;}
+
+     /*hacer lo mismo con imagenes y mas tiempo */
+     /* opacity de 10 en 10 para hacer aparecer objetos en% , lo mismo con translate x pero en px*/
+
+}
+
 
 
 .galeria1 section
@@ -278,7 +302,17 @@ align-content: center;
 
 .foto { grid-area: foto; 
         display: flex;
-        align-items: flex-start;}
+        align-items: flex-start;
+        transition: all 2s;}
+
+.foto :hover
+{
+    filter: grayscale(100%);
+    width: 300px;
+    margin: 50px;
+    transform: rotate(350deg);
+    transform: scale(1.5);
+}
         
 .menu { grid-area: menu; 
         display: flex;
@@ -328,11 +362,16 @@ text-align: center;
 
 
 .footer{
-    background-color:blue;
+    background-image: linear-gradient(red, yellow);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
+    /*transform: scale(1,2);*/
+
+    }
+
+.footer:hover
+{width: 200px;}
 
 
 .container-contacto {
@@ -393,7 +432,7 @@ text-align: center;
 
     .container-contacto {
         display: grid; 
-        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
         grid-template-areas: 
             "foto"
             "ubic"
@@ -485,3 +524,37 @@ text-align: center;
     "imagens"
     "galeria1";
 } 
+
+
+@media screen and (max-width: 657px)
+
+{
+
+    .container {
+        display: grid; 
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,0fr);
+        grid-template-areas: 
+          "foto"
+          "menu"
+          "Texto"; 
+      }
+    .foto { grid-area: foto; 
+            display: flex;
+            justify-content: center;}
+    .menu { grid-area: menu; 
+            display: flex;
+            justify-content: center;
+        }
+
+
+    .container-contacto {
+        display: grid; 
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+            "foto"
+            "ubic"
+            "textL"; 
+        }
+
+}
