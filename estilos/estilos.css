@@ -104,6 +104,7 @@ h1{color: red;}  /*uno particular*/
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -112,7 +113,6 @@ h1{color: red;}  /*uno particular*/
 {
     display: inline-block;
     position: relative;
-    font-size: 20px;
     padding: 0px 10px;
     text-decoration: none;
 
@@ -302,7 +302,7 @@ align-content: center;
 
 .foto { grid-area: foto; 
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         transition: all 2s;}
 
 .foto :hover
@@ -313,6 +313,8 @@ align-content: center;
     transform: rotate(350deg);
     transform: scale(1.5);
 }
+
+
         
 .menu { grid-area: menu; 
         display: flex;
@@ -423,7 +425,8 @@ text-align: center;
       }
     .foto { grid-area: foto; 
             display: flex;
-            justify-content: center;}
+            justify-content: center;
+            }
     .menu { grid-area: menu; 
             display: flex;
             justify-content: center;
