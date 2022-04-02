@@ -561,3 +561,24 @@ text-align: center;
         }
 
 }
+
+.carousel11{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    justify-content: center;}
+
+#galeriaaa img {
+    width: 100%;
+    height: 250px;
+}
+
+#galeriaaa .col-lg-4
+{
+    padding: 25px;
+}
+
+#galeriaaa img:hover {
+    border: 5px solid;
+}
+
