@@ -444,7 +444,7 @@ text-align: center;
 
 }
 
-
+/*
 .galeriaFotos {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -515,7 +515,7 @@ text-align: center;
     
              
         }
-
+*/
 
 .containerNosotros
 
@@ -581,4 +581,20 @@ text-align: center;
 #galeriaaa img:hover {
     border: 5px solid;
 }
+
+.galeryTittle {
+    background-color: antiquewhite;
+    transition: all 2s;}
+
+.galeryTittle:hover
+{
+    filter: grayscale(100%);
+    transform: scale(1.5); 
+} 
+
+.links a {
+    display: flex;
+    flex-direction: row;
+}
+
 
