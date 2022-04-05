@@ -214,18 +214,14 @@ background-color: beige;
 .galeria1
 
 {
-    grid-area: galeria1;
     display: flex;
-    /*background-image: url(../imagenes/image-concrete-construction-site-30225727.jpg);*/
-    flex-direction: column;
     justify-content: center;
-    height: 800px;  /*altura*/
     margin: 5px;
     animation-name: fondoNosotros;
     animation-duration: 4s;
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
-}
+    flex-wrap: wrap;}
 
 
 @keyframes fondoNosotros
@@ -245,21 +241,6 @@ background-color: beige;
 
 }
 
-
-
-.galeria1 section
-
-{
-display: flex;
-flex-direction: column;
-align-items:center;
-background-color: orange;
-padding: 5px;
-text-align: center;
-margin: 10px;
-align-content: center;
-
-}
 
 .imagenS
 
@@ -429,16 +410,7 @@ text-align: center;
 }
 
 
-.containerNosotros
 
-{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1fr;
-    grid-template-areas: 
-    "imagens"
-    "galeria1";
-} 
 
 
 @media screen and (max-width: 657px)
@@ -510,3 +482,7 @@ text-align: center;
 }
 
 
+.imgNosotros
+{display: flex;
+text-align: center;
+margin: 0px auto;}
