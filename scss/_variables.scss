@@ -1,0 +1,71 @@
+$firstcolor: rgb(233, 80, 128);
+$secondcolor: rgb(51, 45, 45); 
+$festividad: empleadosComercio;
+
+footer {
+     @if $festividad == empleadosComercio {
+         background-color: red;
+     }
+
+     @else if $festividad == navidad {
+
+        background-color: white;
+     }
+
+     @else {
+         background-color: violet;
+     }
+
+
+     /* @else if $festividad != navidad {
+        background-color: black
+     }
+
+     */
+
+
+}
+
+@for $i from 1 through 3 {
+    .clase-#{$i} {
+        width: 2px * $i;
+    }
+}
+
+$redes: (
+        twitter: blue,
+        facebook: lightblue,
+        instagram: pink 
+);
+
+@each $red, $color in $redes
+{
+    .btn--#{$red} {
+        background-color: $color;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+
+}
+
+
+/*map get*/
+$estilosGenerales: (
+    color: rgb(142, 82, 101),
+    centro: center,
+);
+
+.textos {
+    text-shadow: 5px;
+    text-align: center;
+
+}
+
+@mixin sizes ($width, $height) {
+    height: $height;
+    width: $width;
+    
+}
+/* hacer mixin de flexbox*/
+
+

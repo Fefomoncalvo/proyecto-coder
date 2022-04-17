@@ -74,11 +74,6 @@ h1{color: red;}  /*uno particular*/
 
 }
 
-.ubic
-{
-    grid-area: ubic;
-}
-
 
 
 
@@ -148,9 +143,7 @@ background-color: beige;
 
 }
 
-.maps { 
-    grid-area: maps;
-    margin-left: 340px;}
+
 
 
 
@@ -273,7 +266,7 @@ background-color: beige;
 .foto :hover
 {
     filter: grayscale(100%);
-    width: 200px;
+    width: 150px;
     margin: 50px;
     transform: rotate(350deg);
     transform: scale(1.5);
@@ -307,27 +300,6 @@ text-align: center;
 
 }
 
-.textLocation
-
-{
-
-    display: flex;
-    flex-direction: row;
-    grid-area: textL;
-}
-
-
-.textLocation div
-
-{
-margin: 20px;
-padding: 20px;
-background-color: aqua;
-text-align: center;
-
-}
-
-
 .footer{
     background-image: linear-gradient(red, yellow);
     display: flex;
@@ -360,11 +332,6 @@ text-align: center;
 }
 
 
-.ubic1 {
-    grid-area: ubic1;
-    display: flex;
-    flex-direction: column;
-}
 
 .container-ubicacion {
     display: grid; 
@@ -481,8 +448,3 @@ text-align: center;
     flex-direction: row;
 }
 
-
-.imgNosotros
-{display: flex;
-text-align: center;
-margin: 0px auto;}
