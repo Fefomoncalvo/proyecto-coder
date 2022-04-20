@@ -1,0 +1,11 @@
+.divformulario {
+    grid-area: formulario;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}

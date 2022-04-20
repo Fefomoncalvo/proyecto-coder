@@ -258,20 +258,6 @@ background-color: beige;
       "foto Texto Texto"; 
   }
 
-.foto { grid-area: foto; 
-        display: flex;
-        align-items: center;
-        transition: all 2s;}
-
-.foto :hover
-{
-    filter: grayscale(100%);
-    width: 150px;
-    margin: 50px;
-    transform: rotate(350deg);
-    transform: scale(1.5);
-}
-
 
         
 .menu { grid-area: menu; 
@@ -321,16 +307,6 @@ text-align: center;
       "foto formulario"
   }
   
-.divformulario { grid-area: formulario; 
-        display: flex;
-        align-items: center;
-        flex-direction: column;}
-
-.formulario {
-    display: flex;
-    flex-direction: column;
-}
-
 
 
 .container-ubicacion {

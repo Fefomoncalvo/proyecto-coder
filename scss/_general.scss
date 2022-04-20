@@ -1,0 +1,14 @@
+.foto {
+    grid-area: foto;
+    display: flex;
+    align-items: center;
+    transition: all 2s;
+
+        &hover {
+            filter: grayscale(100%);
+            width: 150px;
+            margin: 50px;
+            transform: rotate(350deg);
+            transform: scale(1.5);
+        }
+}
