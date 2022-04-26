@@ -7,9 +7,10 @@
   background-image: linear-gradient(red, yellow);
   display: flex;
   justify-content: space-evenly;
-  align-items: center; }
-  .footerhover {
-    width: 200px; }
+  align-items: center;
+  /*&hover {
+        width: 200px;
+        }*/ }
 
 .imagenS {
   grid-area: imagens;
@@ -95,6 +96,9 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column; }
+
+.menu a {
+  text-decoration: none; }
 
 .divformulario {
   grid-area: formulario;
