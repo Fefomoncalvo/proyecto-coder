@@ -55,7 +55,7 @@ h1{color: red;}  /*uno particular*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 50px;
     /*background-color: rgb(212, 44, 176) ;*/
-    background-image: url(../imagenes/image-concrete-construction-site-30225727.jpg);
+    background-image: url(../imagenes/construccion-tradicional-vs-construccion-industrializada-1.jpg);
     border: solid 10px;
     border-top-color: black;
     border-bottom-color: red;
@@ -125,7 +125,7 @@ text-decoration: none;}
     width: 100px;
     height: 100px;
     position: fixed;
-    top: 50px;
+    bottom: 50px;
     left: 0px;
     z-index: 1000;
     background-size: cover;
@@ -210,29 +210,9 @@ background-color: beige;
     display: flex;
     justify-content: center;
     margin: 5px;
-    animation-name: fondoNosotros;
-    animation-duration: 4s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
+    background-color: antiquewhite;
     flex-wrap: wrap;}
 
-
-@keyframes fondoNosotros
-
-{
-    0% {background-color:aqua
-    
-     }
-
-     40% { background-color: blueviolet;}
-
-
-     90% {background-color: brown;}
-
-     /*hacer lo mismo con imagenes y mas tiempo */
-     /* opacity de 10 en 10 para hacer aparecer objetos en% , lo mismo con translate x pero en px*/
-
-}
 
 
 .imagenS
